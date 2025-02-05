@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Energy</title>
+    <link rel="stylesheet" href="./estilos/estadisticas.css">
+    <header>
+        <div class="logo-div">
+            <img src="../imagenes/energias-removebg-preview.png" class="logo" alt="Logo de Blue Energy">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./Inicio.html">Inicio</a>  </li> 
+                <li><a href="./consumo.html">Consumo Electrico</a>  </li>
+                <li><a href="#">Estadisticas</a></li>
+
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <div class="container-graficos">
+        <!-- Gráfico de Barras -->
+        <section id="grafico-barras">
+            <h2>Energia prducida por cada fuente renovable</h2>
+            <canvas id="chartBarras"></canvas>
+        </section>
+    
+        <!-- Gráfico de Torta -->
+        <section id="grafico-torta">
+            <h2>Porcentaje de cada tipo de energía renovable
+                en el total del consumo eléctrico</h2>
+            <canvas id="chartTorta"></canvas>
+        </section>
+    
+        <!-- Gráfico de Líneas -->
+        <section id="grafico-lineas">
+            <h2>Evolución del Consumo Energético</h2>
+            <canvas id="chartLineas"></canvas>
+        </section>
+    
+        <!-- Gráfico de Área -->
+        <section id="grafico-area">
+            <h2>Consumo de energía renovable con el
+                consumo de energía convencional a lo largo del tiempo</h2>
+            <canvas id="chartArea"></canvas>
+        </section>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="../JS/barras.js"></Script>
+    <script src="../JS/torta.js"></script>
+    <script src="../JS/lineas.js"></Script>
+    <script src="../JS/area.js"></Script>
+</body>
+</html>

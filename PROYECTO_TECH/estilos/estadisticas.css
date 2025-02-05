@@ -1,0 +1,50 @@
+@import url('./inicio.css');
+
+/* Estilos generales para las secciones de gráficos */
+section {
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Estilo para los títulos */
+section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Estilo específico para cada gráfico */
+#grafico-barras {
+    background: linear-gradient(135deg, #263137, #263137);
+}
+
+#grafico-torta {
+    background: linear-gradient(135deg, #00A9B9, #00A9B9);
+    color: #263137;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#grafico-lineas {
+    background: linear-gradient(135deg, #D7E6E6, #D7E6E6);
+    color: #263137;
+}
+
+#grafico-area {
+    background: linear-gradient(135deg, #1E90FF, #4169E1);
+    color: white;
+}
+
+/* Estilo para los gráficos */
+canvas {
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blue Energy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilos/consumo.css">
+    </head>
+<body>
+    <header>
+        <div class="logo-div">
+            <img src="../imagenes/energias-removebg-preview.png" class="logo" alt="Logo de Blue Energy">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./Inicio.html">Inicio</a>  </li> 
+                <li><a href="#">Consumo Electrico</a>  </li>
+                <li><a href="./estadisticas.html">Estadisticas</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="consumo">
+        <h1>Consumo Eléctrico</h1>
+        <p>Ingresa tu consumo eléctrico total en kilovatios-hora (kWh) para calcular tu impacto energético.</p>
+    
+        <label for="consumo">Consumo eléctrico total (kWh):</label>
+        <input type="text" id="total" required>
+    
+        <button type="submit" id="calcular">Calcular</button>
+
+        <h3>Porcentaje de energia renovable en su hogar: </h3>
+        <p id="resultado"></p>
+
+    </section>
+
+    <section id="datos">
+        <h2>Datos históricos globales sobre energía renovable (1965-2022)</h2>
+    
+        <input type="file" id="fileInput" style="display: none;">
+        <button id="cargarBtn">Cargar información</button>
+    
+        <div id="tabla-container">
+            <table id="tabla">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../JS/datos.js"></script>
+    <script src="../JS/consumo.js"></script>
+
+</body>
+</html>
